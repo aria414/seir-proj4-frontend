@@ -1,7 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useHistory } from "react-router-dom";
-import $ from "jquery";
 
 const Footer = () => {
   return (
@@ -9,8 +6,8 @@ const Footer = () => {
       <div>
         <i className="lab la-facebook-f"></i>
         <i className="lab la-twitter"></i>
-        <i className="lab la-tumblr"></i>
-        <i className="lab la-instagram"></i>
+        <i className="fab fa-tumblr"></i>
+        <i className="fab fa-instagram-square"></i>
       </div>
       <p className="light-gray-text">
         The Lord of The Rings Series is © by the Tolkien Estate. Website Design

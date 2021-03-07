@@ -47,34 +47,33 @@ function App() {
     <div className="App">
       <SideNav />
       <div className="main">
-        <div className="banner">
-          <h1>All Poems</h1>
-        </div>
-
-        <Switch>
-          <Route exact path="/">
-            <PoemsList
-              poems={poems}
-              headline={"All Poems"}
-              selectPoem={selectPoem}
-            />
-          </Route>
-
-          <Route
-            path="/fotr"
-            render={(routerProps) => (
+        <div className="banner"></div>
+        <div className="content">
+          <Switch>
+            <Route exact path="/">
               <PoemsList
-                poems={fotrpoems}
-                headline={"The Fellowship of the Ring"}
+                poems={poems}
+                headline={"All Poems"}
                 selectPoem={selectPoem}
               />
-            )}
-          />
-          <Route
-            path="/poem/:id"
-            render={(routerProps) => <Poem currentPoem={selectedPoem} />}
-          />
-        </Switch>
+            </Route>
+
+            <Route
+              path="/fotr"
+              render={(routerProps) => (
+                <PoemsList
+                  poems={fotrpoems}
+                  headline={"The Fellowship of the Ring"}
+                  selectPoem={selectPoem}
+                />
+              )}
+            />
+            <Route
+              path="/poem/:id"
+              render={(routerProps) => <Poem currentPoem={selectedPoem} />}
+            />
+          </Switch>
+        </div>
       </div>
       <Footer />
     </div>

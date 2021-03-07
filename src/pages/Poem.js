@@ -24,18 +24,26 @@ const Poem = (props) => {
     }
 
     return (
-      <div className="content" key={currentPoem.id}>
-        <h3>{currentPoem.title}</h3>
-        <p>{currentPoem.citation}</p>
-        <p className="light-gray-text">
-          RECITED BY: {currentPoem.recitedby.toUpperCase()}
-        </p>
-        <p style={{ color: langColor }}>{currentPoem.language}</p>
+      <>
+        <div className="poem-info">
+          <h1>{currentPoem.title}</h1>
+          <p className="citation">{currentPoem.citation}</p>
+          <p className="light-gray-text">{currentPoem.comment}</p>
+          <br />
+          <p className="light-gray-text">
+            RECITED BY: {currentPoem.recitedby.toUpperCase()}
+          </p>
+          <p style={{ color: langColor }}>Languages: {currentPoem.language}</p>
+          <br /> <hr />
+        </div>
 
-        <pre className="poem-format">{currentPoem.content}</pre>
-        <pre className="poem-format">{currentPoem.translation}</pre>
-        <p>{currentPoem.intextref}</p>
-      </div>
+        <div className="poem-format" key={currentPoem.id}>
+          <p>{currentPoem.intextref}</p>
+          <br /> <hr />
+          <pre>{currentPoem.content}</pre>
+          <pre>{currentPoem.translation}</pre>
+        </div>
+      </>
     );
   };
 

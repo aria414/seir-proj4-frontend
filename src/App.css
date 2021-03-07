@@ -87,6 +87,62 @@ i.las {
   color: white;
 }
 
+button {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.navbar-toggler {
+  line-height: 1;
+  background-color: transparent;
+  padding: 0px;
+  margin: 0px;
+  width: 32px;
+}
+/* =================================
+--------- MOBILE FOOTER STYLES ----------
+==================================== */
+.footer {
+  padding: 4%;
+  box-shadow: 5px 4px 10px #9e9e9e;
+}
+
+.footer div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+i.lab {
+  font-size: 2em;
+  color: black;
+  border: 2px solid;
+  border-radius: 100%;
+  padding: 2px;
+}
+
+i.fab {
+  font-size: 1.5em;
+  border: 2px solid;
+  border-radius: 100%;
+  text-align: center;
+  width: 40px;
+  padding-top: 5px;
+}
+.footer p {
+  font-size: 0.8em;
+  margin-bottom: 0px;
+  line-height: 1.2em;
+  padding: 10px 0px 0px 0px;
+}
+
+/* ==========================================
+------------ MOBILE CONTENT STYLE -------------
+========================================== */
 .banner {
   max-width: 100%;
   height: 200px;
@@ -116,14 +172,9 @@ img {
   padding-top: 50px;
 }
 
-.content {
+.allpoems,
+.poem-format {
   padding: 5%;
-}
-
-.poem-list {
-  margin: 3% 0%;
-  border-bottom: 1px solid #e0e0e0;
-  padding: 3%;
 }
 
 .border-decor {
@@ -143,50 +194,29 @@ img {
   margin: 0 auto;
 }
 
-.poem-format {
+.poem-list {
+  margin: 3% 0%;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 3% 0px;
 }
 
-button {
+.poem-info {
+  text-align: center;
+  margin-bottom: 3%;
+  background: #f7f5f1;
+  padding: 10%;
+}
+
+.poem-format pre {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.4;
+  white-space: pre-line;
+  font-weight: 300;
   padding: 0px;
-  margin: 0px;
-  border: none;
 }
 
-button:focus {
-  outline: none;
-}
-
-.navbar-toggler {
-  line-height: 1;
-  background-color: transparent;
-  padding: 0px;
-  margin: 0px;
-  width: 32px;
-}
-/* =================================
---------- FOOTER STYLES ----------
-==================================== */
-.footer {
-  padding: 4%;
-  box-shadow: 5px 4px 10px #9e9e9e;
-}
-
-.footer div {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-i.lab {
-  font-size: 2em;
-  color: black;
-  border: 2px solid;
-  border-radius: 100%;
-  padding: 2px;
-}
-
-.footer p {
-  font-size: 0.8em;
-  margin-bottom: 0px;
-  line-height: 1.2em;
-  padding: 10px 0px 0px 0px;
+.citation {
+  text-decoration: underline;
+  margin-bottom: 3%;
 }
