@@ -10,7 +10,8 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
-  const url = "http://localhost:1080/api/poem/";
+  //const url = "http://localhost:1080/api/poem/";
+  const url = "https://lotrpoem-api.herokuapp.com/api/poem";
 
   // ---------------- Defines STATES --------------------
   const [poems, setPoems] = useState([]);
