@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# Project4 - LOTR POETRY
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Links
 
-## Available Scripts
+- [Frontend Repo Link]
+- [Backend Repo Link]
+- [Netlify Link]
+- [Heroku Link]
 
-In the project directory, you can run:
+## Project Description
 
-### `yarn start`
+This website is for anyone who enjoys the poetry of the Lord of the Rings (as well as the series itself). I personally really appreciate the time and devotion Tolkien had in building this universe. Its elements and artistry is timeless. Since this website is heavily text based, I try to design it with more icons to accomodate the text. The poems will be accomodated with a background image from unsplash to illustrate the poems' contents.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The poems are found on [Tolkien Gateway's website](http://tolkiengateway.net/wiki/Poems_in_The_Lord_of_the_Rings)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## BACKEND TECH
 
-### `yarn test`
+The backend will be deployed on Heroku using php and laravel. It will be a simple API holding data for each poem.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Poem Schema**
 
-### `yarn build`
+- Contains user info - first and last name, email, password
+- User will reference the Budget model which contains their income and how much they are willing to spend.
+- User will also reference a Transaction Model which contains details of what they spend money on.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+Poem: {
+    title: String,
+    content: String,
+    citation: String,
+    comment: String, //Some comments left by the authors
+    intextref: String, //Text from book that references the poem
+    recitedby: String //Character whom recited the poem/song
+    image: String // a background image to accompany the poem.
+}
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## User Stories
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Be able to see a list of all the poems in the main page
+- Have a side menu that allows user to see the poems from each book
+- Be able to add a poem to faves or add it to a collection ?
 
-### `yarn eject`
+## Wireframes
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [WireFrame - All](https://drive.google.com/drive/folders/1wACumFdsFefyu15nwQ9fH9LVvlCAWUI3?usp=sharing)
+- [React Architecture](https://docs.google.com/drawings/d/1w6gFNLqSF1zRtB3H0xO_nhYB9-gGHkPiYVYqv1_nVWQ/edit?usp=sharing)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## MVP
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Backend
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Backend Repo wth readme that describes backend.
+- Planning Directory that has full backend/frontend planning.
+  - Contains user stories, backend architecture, frontend architecture, and wireframes
+- Use Laravel, PHP and MYSQL database.
+- Create logically named routes/urls.
+- Deployed via Heroku
 
-## Learn More
+### Frontend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Frontend Repo with readme that describes frontend.
+- Uses React App.
+- React app leverages backend API information.
+- Uses React Router to handle multiple views
+- Communicate with backend DB using Fetch or Axios.
+  - Communicate with fetch.
+  - Render data to frontend.
+- Contains project team page
+- Be responsive (Mobile, Tablet, and Desktop).
+- Deployed via Netlify
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Post-MVP
 
-### Code Splitting
+- Collection page for organizing poems into collections. Can name the collections.
+- Fave section to hold your fave poems.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Front-End Pages and Components
 
-### Analyzing the Bundle Size
+Initial components decided for Project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+| Pages          |                                        Description                                         |
+| -------------- | :----------------------------------------------------------------------------------------: |
+| App.js         |                        Main page to store and render all components                        |
+| AllPoems.js    |                                  Renders all of the poems                                  |
+| PoemsByBook.js |                Render the poems by the book. This component will be reused.                |
+| Poem.js        |                                   Shows the single poem                                    |
+| Fave.js        |                       Section with all your favorite - Post MVPpoems                       |
+| Collection.js  | Section with the poems organized in collections. Can give collection a name - for post MVP |
+| About.js       |                                     About the app page                                     |
+| Contact.js     |                                        Contact Page                                        |
 
-### Making a Progressive Web App
+| Components |                Description                 |
+| ---------- | :----------------------------------------: |
+| SideNav    |        Navigation Bar for the app.         |
+| Footer     | Has footer icons and copyright disclaimers |
+| Landing    |    Component rendered on landing page.     |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## MVP Time-Frames
 
-### Advanced Configuration
+| Task                                     | Priority | Estimated Time | Time Invested |
+| ---------------------------------------- | :------: | :------------: | :-----------: |
+| Create database/seed data                |    H     |     5 hrs      |      hrs      |
+| Find images for each poem...             |    H     |     4 hrs      |      hrs      |
+| Create routes/test                       |    H     |     2 hrs      |      hrs      |
+| Create React Skeleton React Components   |    M     |     4 hrs      |      hrs      |
+| React Routes/Paths linking to components |    H     |      2 hr      |      hr       |
+| API fetch to grab data in React          |    L     |     0.5 hr     |      hrs      |
+| Mobile Layouts                           |    H     |     6 hrs      |      hrs      |
+| Tablet Layouts                           |    H     |     6 hrs      |      hrs      |
+| Desktop Layouts                          |    H     |     8 hrs      |      hrs      |
+| Total Time                               |    H     |    37.5 hrs    |      hrs      |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Post MVP Time-Frames
 
-### Deployment
+| Task        | Priority | Estimated Time | Time Invested |
+| ----------- | :------: | :------------: | :-----------: |
+| Faves       |    H     |     4 hrs      |     0 hrs     |
+| Collections |    H     |     6 hrs      |     0 hrs     |
+| Total Time  |    H     |     10 hrs     |     0 hrs     |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Additional Libraries
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React.js
+- React-Router
+- Laravel
+- Bootstrap
