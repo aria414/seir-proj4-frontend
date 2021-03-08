@@ -247,25 +247,25 @@ img {
 
 .poem-format pre {
   font-size: 1.1em;
-  line-height: 1.4;
+  line-height: 1.5;
   white-space: pre-line;
   padding: 0px;
-  font-family: "Baskervville", serif;
-  font-weight: 500;
+  font-family: "Crimson Text", serif;
 }
 .poem-format h3 {
-  font-weight: 500;
-  margin-bottom: 0.5em;
-  font-size: 1.6em;
+  font-weight: 600;
+  margin-bottom: 0.7em;
+  font-size: 1.5em;
 }
 
-.poem-format p:first-of-type {
+.poem-format p:first-of-type,
+pre {
   color: #7a7a7a;
 }
 
 .citation {
   text-decoration: underline;
-  margin-bottom: 3%;
+  margin: 3% 0px;
 }
 
 .share-icons {
