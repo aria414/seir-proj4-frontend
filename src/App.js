@@ -15,12 +15,16 @@ function App() {
 
   // ---------------- Defines STATES --------------------
   const [poems, setPoems] = useState([]);
+
   const [fotrpoems, setFotrPoems] = useState([]);
+  const [tttpoems, setTttPoems] = useState([]);
+  const [rotkpoems, setRotkPoems] = useState([]);
+
   const [selectedPoem, setSelectedPoem] = useState(null);
 
+  // ---------------- FUNCTION TO SELECT A POEM FOR REDIRECT --------------------
   const selectPoem = (current) => {
     setSelectedPoem(current);
-    console.log("APP - Selected poem: ", selectedPoem);
   };
 
   // GET - INDEX---
@@ -33,6 +37,13 @@ function App() {
       //Filter data and store into fotrpoems state ... This is for FOTR poems only
       setFotrPoems(
         allpoems.filter((poem, id) => poem.citation.includes("FOTR"))
+      );
+      //Filter data and store into tttpoems state ... This is for TWO TOWERS poems only
+      setTttPoems(allpoems.filter((poem, id) => poem.citation.includes("TTT")));
+
+      //Filter data and store into rotkpoems state ... This is for ROTK poems only
+      setRotkPoems(
+        allpoems.filter((poem, id) => poem.citation.includes("ROTK"))
       );
     });
   };
@@ -64,6 +75,26 @@ function App() {
                 <PoemsList
                   poems={fotrpoems}
                   headline={"The Fellowship of the Ring"}
+                  selectPoem={selectPoem}
+                />
+              )}
+            />
+            <Route
+              path="/twotowers"
+              render={(routerProps) => (
+                <PoemsList
+                  poems={tttpoems}
+                  headline={"The Two Towers"}
+                  selectPoem={selectPoem}
+                />
+              )}
+            />
+            <Route
+              path="/rotk"
+              render={(routerProps) => (
+                <PoemsList
+                  poems={rotkpoems}
+                  headline={"The Return of the King"}
                   selectPoem={selectPoem}
                 />
               )}

@@ -4,6 +4,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
+
+/* 
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Cormorant Garamond', serif;
+font-family: "Cinzel", serif;
+font-family: 'EB Garamond', serif;
+*/
 
 .App {
   box-sizing: border-box;
@@ -18,12 +26,21 @@
 .light-gray-text {
   color: #757575;
 }
+
 a {
   text-decoration: none !important;
 }
 
+.p-4 a:visited {
+  color: white;
+}
+
+.p-4 h2 {
+  color: #e3cccc;
+}
+
 h1 {
-  font-size: 1.8em;
+  font-size: 2em;
   font-family: "EB Garamond", serif;
 }
 
@@ -40,7 +57,7 @@ h3 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 0.9em;
   margin-bottom: 0px;
 }
 
@@ -48,10 +65,6 @@ h1,
 h2,
 h3 {
   margin: 0.5% 0;
-}
-a {
-  text-decoration: none;
-  color: white;
 }
 
 /* ==========================================
@@ -73,7 +86,7 @@ header {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  height: 50px;
+  height: 55px;
   align-items: center;
 }
 
@@ -82,9 +95,10 @@ header {
   color: white;
 }
 
-i.las {
-  font-size: 2em;
-  color: white;
+i.las,
+i.lar {
+  font-size: 1.7em;
+  color: #e3cccc;
 }
 
 button {
@@ -134,7 +148,7 @@ i.fab {
   padding-top: 5px;
 }
 .footer p {
-  font-size: 0.8em;
+  font-size: 0.7em;
   margin-bottom: 0px;
   line-height: 1.2em;
   padding: 10px 0px 0px 0px;
@@ -174,7 +188,7 @@ img {
 
 .allpoems,
 .poem-format {
-  padding: 5%;
+  padding: 6%;
 }
 
 .border-decor {
@@ -208,15 +222,36 @@ img {
 }
 
 .poem-format pre {
-  font-family: "Work Sans", sans-serif;
   font-size: 1.2em;
   line-height: 1.4;
   white-space: pre-line;
-  font-weight: 300;
+  font-weight: 400;
   padding: 0px;
+  font-family: "Cormorant Garamond", serif;
+}
+.poem-format h3 {
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+
+.poem-format p:first-of-type {
+  font-weight: 300;
 }
 
 .citation {
   text-decoration: underline;
   margin-bottom: 3%;
+}
+
+.share-icons {
+  margin: 20px 0px;
+  font-size: 0.8em;
+  text-align: center;
+}
+.share-icons i.las,
+i.lar {
+  color: #cf6767;
+  border: 1px solid #aeaeae;
+  padding: 3px;
+  width: 45px;
 }

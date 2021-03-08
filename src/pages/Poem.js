@@ -23,6 +23,11 @@ const Poem = (props) => {
       langColor = "#007ca5";
     }
 
+    let isTranslate = "";
+    if (currentPoem.language !== "English") {
+      isTranslate = "Translation";
+    }
+
     return (
       <>
         <div className="poem-info">
@@ -38,9 +43,18 @@ const Poem = (props) => {
         </div>
 
         <div className="poem-format" key={currentPoem.id}>
+          <h3>Intext Reference</h3>
           <p>{currentPoem.intextref}</p>
           <br /> <hr />
+          <section className="share-icons">
+            <i class="las la-bookmark"></i>
+            <i class="lar la-heart"></i>
+            <i class="las la-share"></i>
+          </section>
+          <h3>{currentPoem.language}</h3>
           <pre>{currentPoem.content}</pre>
+          <br />
+          <h3>{isTranslate}</h3>
           <pre>{currentPoem.translation}</pre>
         </div>
       </>

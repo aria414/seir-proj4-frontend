@@ -18,7 +18,7 @@ const SideNav = () => {
         </button>
         <div className="icon">
           <Link to="/">
-            <i className="las la-home"></i>
+            <i class="las la-book"></i>
             <h3>All Poems</h3>
           </Link>
         </div>
@@ -35,7 +35,7 @@ const SideNav = () => {
           </Link>
         </div>
         <div className="icon">
-          <Link to="/retotk">
+          <Link to="/rotk">
             <i className="las la-dungeon"></i>
             <h3>The Return of the King</h3>
           </Link>
