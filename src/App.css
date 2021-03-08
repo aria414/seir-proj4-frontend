@@ -163,7 +163,7 @@ i.lab {
   padding: 2px;
 }
 
-i.fab {
+i.fa {
   font-size: 1.5em;
   border: 2px solid;
   border-radius: 100%;
@@ -246,18 +246,17 @@ img {
 }
 
 .poem-format pre {
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1.4;
   white-space: pre-line;
   padding: 0px;
-  /* font-family: "Jomolhari", serif; */
-  font-family: "GFS Didot", serif;
+  font-family: "Baskervville", serif;
   font-weight: 500;
 }
 .poem-format h3 {
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 0.5em;
-  font-size: 1.5em;
+  font-size: 1.6em;
 }
 
 .poem-format p:first-of-type {
