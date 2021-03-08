@@ -1,16 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Linden+Hill&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jomolhari&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rosarivo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balthazar&display=swap");
+
 /* 
-font-family: 'Nanum Myeongjo', serif;
 font-family: 'Cormorant Garamond', serif;
 font-family: "Cinzel", serif;
 font-family: 'EB Garamond', serif;
+font-family: 'Crimson Text', serif;
+font-family: 'Baskervville', serif;
+font-family: 'GFS Didot', serif;
+font-family: 'Halant', serif;
+font-family: 'Linden Hill', serif;
+font-family: 'Jomolhari', serif;
+font-family: 'Jacques Francois', serif;
+font-family: 'Rosarivo', serif;
+font-family: 'Cormorant Infant', serif;
+font-family: 'Balthazar', serif;
 */
 
 .App {
@@ -162,7 +179,7 @@ i.fab {
 }
 
 /* ==========================================
------------- MOBILE CONTENT STYLE -------------
+------------ MOBILE POEM CONTENT STYLE -------------
 ========================================== */
 .banner {
   max-width: 100%;
@@ -229,12 +246,12 @@ img {
 }
 
 .poem-format pre {
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.4;
   white-space: pre-line;
-  font-weight: 500;
   padding: 0px;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Infant", serif;
+  font-weight: 500;
 }
 .poem-format h3 {
   font-weight: 400;
@@ -263,3 +280,6 @@ i.lar {
   padding: 3px;
   width: 45px;
 }
+/* ==========================================
+----------  TABLET MEDIA QUERIES -----------
+========================================== */
