@@ -246,11 +246,12 @@ img {
 }
 
 .poem-format pre {
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.4;
   white-space: pre-line;
   padding: 0px;
-  font-family: "Cormorant Infant", serif;
+  /* font-family: "Jomolhari", serif; */
+  font-family: "GFS Didot", serif;
   font-weight: 500;
 }
 .poem-format h3 {
