@@ -18,47 +18,46 @@ const SideNav = () => {
         </button>
 
         <div className="logo-area">
-          <h1>LO</h1>
-          <h1>TR</h1>
+          <h1>LOTR</h1>
           <h3>Poems</h3>
         </div>
 
         <div className="book-icon-group">
           <NavLink exact to="/" activeClassName="active">
             <i class="las la-book"></i>
-            <h3>All Poems</h3>
+            <h2>All Poems</h2>
           </NavLink>
 
           <NavLink to="/fotr" activeClassName="active">
             <i className="las la-ring"></i>
-            <h3>The Fellowship of The Ring</h3>
+            <h2>The Fellowship of The Ring</h2>
           </NavLink>
 
           <NavLink to="/twotowers" activeClassName="active">
             <i className="las la-monument"></i>
-            <h3>Two Towers</h3>
+            <h2>Two Towers</h2>
           </NavLink>
 
           <NavLink to="/rotk" activeClassName="active">
             <i className="las la-dungeon"></i>
-            <h3>The Return of the King</h3>
+            <h2>The Return of the King</h2>
           </NavLink>
         </div>
 
         <div className="page-icon-group">
           <NavLink to="/home" activeClassName="active">
             <i className="las la-home"></i>
-            <h3>Home</h3>
+            <h2>Home</h2>
           </NavLink>
 
           <NavLink to="/about" activeClassName="active">
             <i className="las la-scroll"></i>
-            <h3>About</h3>
+            <h2>About</h2>
           </NavLink>
 
           <NavLink to="/contact" activeClassName="active">
             <i class="las la-envelope"></i>
-            <h3>Contact</h3>
+            <h2>Contact</h2>
           </NavLink>
         </div>
       </div>
