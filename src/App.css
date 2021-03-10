@@ -481,7 +481,7 @@ i.lar {
     display: flex;
     flex-wrap: wrap;
     border: 1px solid;
-    min-height: 900px;
+    min-height: 100vh;
   }
   .main,
   .footer {
