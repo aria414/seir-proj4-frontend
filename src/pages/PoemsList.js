@@ -48,7 +48,10 @@ const PoemsList = (props) => {
       <div className="allpoems">
         <h2>{headline}</h2>
         <div className="border-decor">
-          <img src="https://svgsilh.com/svg/1584992.svg" />
+          <img
+            src="https://svgsilh.com/svg/1584992.svg"
+            alt="Decorative border"
+          />
         </div>
 
         {allpoems}

@@ -5,7 +5,10 @@ const Home = () => {
     <div className="home-content">
       <h2>Home</h2>
       <div className="border-decor">
-        <img src="https://svgsilh.com/svg/1584992.svg" />
+        <img
+          src="https://svgsilh.com/svg/1584992.svg"
+          alt="Decorative border"
+        />
       </div>
       <p>
         This project is for everyone to enjoy the poems from The Lord of the

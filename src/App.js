@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Route, Link, Switch } from "react-router-dom";
-import { useHistory } from "react-router-dom";
 
 import axios from "axios";
 import Home from "./pages/Home";
@@ -11,7 +10,6 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
-  //const url = "http://localhost:1080/api/poem/";
   const url = "https://lotrpoem-api.herokuapp.com/api/poem";
 
   // ---------------- Defines STATES --------------------
