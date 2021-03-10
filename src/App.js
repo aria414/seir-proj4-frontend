@@ -3,6 +3,7 @@ import { Route, Link, Switch } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 
 import axios from "axios";
+import Home from "./pages/Home";
 import PoemsList from "./pages/PoemsList";
 import Poem from "./pages/Poem";
 import SideNav from "./components/SideNav";
@@ -68,7 +69,7 @@ function App() {
                 selectPoem={selectPoem}
               />
             </Route>
-
+            <Route path="/home" render={(routerProps) => <Home />} />
             <Route
               path="/fotr"
               render={(routerProps) => (
@@ -105,8 +106,8 @@ function App() {
             />
           </Switch>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }

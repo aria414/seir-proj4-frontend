@@ -35,7 +35,7 @@ font-family: 'Balthazar', serif;
 .App {
   box-sizing: border-box;
   line-height: 1.5em;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", sans-serif !important;
 }
 /* ------------ DEFINING SOME BASIC CSS ----------- */
 .strong {
@@ -231,8 +231,9 @@ img {
 }
 
 .allpoems,
-.poem-format {
-  padding: 6%;
+.poem-format,
+.home-content {
+  padding: 5%;
 }
 
 .border-decor {
@@ -241,7 +242,7 @@ img {
   position: relative;
   margin: 10% 0;
 }
-.content img {
+.border-decor img {
   width: 80px;
   height: auto;
   background: white;
@@ -305,6 +306,11 @@ i.lar {
 ----------  TABLET MEDIA QUERIES -----------
 ========================================== */
 @media screen and (min-width: 768px) {
+  .main {
+    margin: 0 auto 0 75px;
+    padding-top: 0px;
+  }
+
   h1 {
     font-size: 2.1em;
   }
@@ -360,7 +366,7 @@ i.lar {
     margin: 5% 0;
   }
 
-  .content img {
+  .border-decor img {
     width: 100px;
     top: -25px;
   }
@@ -378,6 +384,10 @@ i.lar {
     background: #510000;
   }
 
+  a:hover {
+    background: #510000;
+  }
+
   .logo-area {
     display: block;
     color: #ffecc8;
@@ -386,14 +396,9 @@ i.lar {
     padding: 2px;
   }
 
-  .main {
+  /* .footer {
     margin: 0 auto 0 75px;
-    padding-top: 0px;
-  }
-
-  .footer {
-    margin: 0 auto 0 75px;
-  }
+  } */
 
   .footer p {
     font-size: 0.8em;
@@ -433,21 +438,73 @@ i.lar {
   }
 }
 /* ==========================================
-----------  TABLET MEDIA QUERIES -----------
+----------  DESKTOP MEDIA QUERIES -----------
 ========================================== */
 @media screen and (min-width: 1024px) {
-  .main,
-  .footer {
-    margin: 0 auto 0 250px;
+  /* .App {
+    width: 1274px;
+    margin: 0 auto 0 16%;
+    height: auto;
+    border-right: 1px solid black;
+    min-height: 1600px;
   }
 
+  .right-border {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    width: 250px;
+    height: 100%;
+    border-left: 1px solid red;
+  }
+  .main {
+    margin-left: 8.5em;
+  } */
+
+  /* .content {
+    margin-bottom: 150px;
+  }
+
+  .footer {
+    width: 1124px;
+    margin-left: 9em;
+    height: 140px;
+    padding: 20px 50px;
+    position: fixed;
+    bottom: 0;
+  } */
+
+  .App {
+    width: 1276px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid;
+    min-height: 900px;
+  }
+  .main,
+  .footer {
+    margin: 0px;
+    width: 1024px;
+  }
+
+  .footer {
+    height: 140px;
+    padding: 20px 50px;
+  }
   header,
   .nav {
     width: 250px;
+    position: relative;
+    height: auto;
   }
 
   .nav {
     display: block;
+    height: 800px;
+    position: fixed;
+    top: 80px;
   }
 
   i.las,
@@ -458,6 +515,8 @@ i.lar {
   .logo-area {
     width: 100%;
     padding: 5%;
+    height: 20%;
+    margin-top: 5%;
   }
   .logo-area h3 {
     text-align: center;

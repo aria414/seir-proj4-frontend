@@ -64,15 +64,15 @@ const SideNav = () => {
 
       <div className="collapse" id="navbarToggleExternalContent">
         <div className="p-4">
-          <Link to="/home">
+          <NavLink to="/home">
             <h2>Home</h2>
-          </Link>
-          <Link to="/about">
+          </NavLink>
+          <NavLink to="/about">
             <h2>About</h2>
-          </Link>
-          <Link to="/contact">
+          </NavLink>
+          <NavLink to="/contact">
             <h2>Contact</h2>
-          </Link>
+          </NavLink>
         </div>
       </div>
     </header>
