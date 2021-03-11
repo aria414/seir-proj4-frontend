@@ -10,31 +10,18 @@ const Home = () => {
           alt="Decorative border"
         />
       </div>
+      <h3>Welcome Strider!</h3>
+      <br />
       <p>
-        This project is for everyone to enjoy the poems from The Lord of the
-        Rings Series.
+        You have stumbled across a wonderful little website dedicated to the
+        poetry of The Lord of the Rings series. We hope you enjoy the stay.
+        Please use the navigation links to check out the poems from the books.
       </p>
+      <br />
       <p>
-        Poem content and citation/references are thoughtfully compiled by the
-        wonderful
+        If you feel that a poem is missing, or would like us to add it to the
+        collection, feel free to drop us a note on the contact page.
       </p>
-      <a href="http://tolkiengateway.net/wiki/Poems_in_The_Lord_of_the_Rings">
-        Tolkien Gateway website.
-      </a>
-      <p>
-        Head over there for a more complete listing of poems and songs from the
-        series.
-      </p>
-      Banner Image: Yosemite Valley - Photo by{" "}
-      <a href="https://unsplash.com/@kvnga?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-        Kvnga
-      </a>
-      {"  "}
-      on
-      {"  "}
-      <a href="/photos/-eUgKnGFNkU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
-        Unsplash
-      </a>
     </div>
   );
 };

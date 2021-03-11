@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const SideNav = () => {
   return (
@@ -13,7 +13,7 @@ const SideNav = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <i class="las la-bars"></i>
+          <i className="las la-bars"></i>
         </button>
 
         <div className="logo-area">
@@ -28,7 +28,7 @@ const SideNav = () => {
             activeClassName="active"
             aria-label="Link to All Poems"
           >
-            <i class="las la-book"></i>
+            <i className="las la-book"></i>
             <h2>All Poems</h2>
           </NavLink>
 
@@ -84,7 +84,7 @@ const SideNav = () => {
             activeClassName="active"
             aria-label="Link to Contact Page"
           >
-            <i class="las la-envelope"></i>
+            <i className="las la-envelope"></i>
             <h2>Contact</h2>
           </NavLink>
         </div>

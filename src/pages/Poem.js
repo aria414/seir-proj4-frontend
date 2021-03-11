@@ -2,7 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 
 const Poem = (props) => {
-  //let history = useHistory();
+  let history = useHistory();
 
   const { currentPoem } = props;
   let langColor = "#000";
@@ -47,15 +47,18 @@ const Poem = (props) => {
           <p>{currentPoem.intextref}</p>
           <br /> <hr />
           <section className="share-icons">
-            <i class="las la-bookmark"></i>
-            <i class="lar la-heart"></i>
-            <i class="las la-share"></i>
+            <i className="las la-bookmark"></i>
+            <i className="lar la-heart"></i>
+            <i className="las la-share"></i>
           </section>
           <h3>{currentPoem.language}</h3>
           <pre>{currentPoem.content}</pre>
           <br />
           <h3>{isTranslate}</h3>
           <pre>{currentPoem.translation}</pre>
+          <button id="btn-back" onClick={() => history.push("/")}>
+            Back to Listing
+          </button>
         </div>
       </>
     );

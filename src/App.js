@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
-import { Route, Link, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import axios from "axios";
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 import PoemsList from "./pages/PoemsList";
 import Poem from "./pages/Poem";
 import SideNav from "./components/SideNav";
@@ -67,41 +69,39 @@ function App() {
                 selectPoem={selectPoem}
               />
             </Route>
-            <Route path="/home" render={(routerProps) => <Home />} />
-            <Route
-              path="/fotr"
-              render={(routerProps) => (
-                <PoemsList
-                  poems={fotrpoems}
-                  headline={"The Fellowship of the Ring"}
-                  selectPoem={selectPoem}
-                />
-              )}
-            />
-            <Route
-              path="/twotowers"
-              render={(routerProps) => (
-                <PoemsList
-                  poems={tttpoems}
-                  headline={"The Two Towers"}
-                  selectPoem={selectPoem}
-                />
-              )}
-            />
-            <Route
-              path="/rotk"
-              render={(routerProps) => (
-                <PoemsList
-                  poems={rotkpoems}
-                  headline={"The Return of the King"}
-                  selectPoem={selectPoem}
-                />
-              )}
-            />
-            <Route
-              path="/poem/:id"
-              render={(routerProps) => <Poem currentPoem={selectedPoem} />}
-            />
+            <Route path="/home">
+              <Home />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+            </Route>
+            <Route path="/fotr">
+              <PoemsList
+                poems={fotrpoems}
+                headline={"The Fellowship of the Ring"}
+                selectPoem={selectPoem}
+              />
+            </Route>
+            <Route path="/twotowers">
+              <PoemsList
+                poems={tttpoems}
+                headline={"The Two Towers"}
+                selectPoem={selectPoem}
+              />
+            </Route>
+            <Route path="/rotk">
+              <PoemsList
+                poems={rotkpoems}
+                headline={"The Return of the King"}
+                selectPoem={selectPoem}
+              />
+            </Route>
+            <Route path="/poem/:id">
+              <Poem currentPoem={selectedPoem} />
+            </Route>
           </Switch>
         </div>
         <Footer />

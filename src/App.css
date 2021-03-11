@@ -280,6 +280,43 @@ i.lar {
 .home-content a:hover {
   color: #001aad;
 }
+
+form label,
+form input,
+form textarea {
+  display: block;
+  width: 80%;
+  margin: 0 auto 1% auto;
+}
+
+form input,
+form textarea {
+  border: 1px solid #d4d4d4;
+  padding: 5px;
+  box-shadow: 2px 3px 5px -3px #cac7bd;
+}
+
+.eform {
+  width: 100%;
+  min-height: 400px;
+  border: 1px solid #d8d7d2;
+  padding: 5% 1%;
+  background: #f9f6f1;
+  font-family: "Crimson Pro", serif;
+  font-size: 1.2em;
+}
+
+#submit-btn {
+  width: 150px;
+  background: #ddedd0;
+  border: 1px solid #c8dcc6;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+#submit-btn:hover {
+  background: honeydew;
+}
 /* ==========================================
 ----------  TABLET MEDIA QUERIES -----------
 ========================================== */
@@ -376,6 +413,10 @@ i.lar {
 
   .footer p {
     font-size: 1em;
+  }
+
+  .home-content p {
+    font-size: 1.1em;
   }
 
   .allpoems {
@@ -499,5 +540,9 @@ i.lar {
   .page-icon-group h2 {
     font-size: 0.6em;
     font-family: "Work Sans", sans-serif;
+  }
+
+  .home-content p {
+    font-size: 1.2em;
   }
 }

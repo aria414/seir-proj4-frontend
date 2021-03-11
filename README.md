@@ -2,10 +2,10 @@
 
 ## Project Links
 
-- [Frontend Repo Link]
-- [Backend Repo Link]
-- [Netlify Link]
-- [Heroku Link]
+- [Frontend Repo Link](https://github.com/aria414/seir-proj4-frontend)
+- [Backend Repo Link](https://github.com/aria414/seir-proj4-backend)
+- [Netlify Link](https://seir04-lotrpoems.netlify.app/)
+- [Heroku Link](https://lotrpoem-api.herokuapp.com/api/poem)
 
 ## Project Description
 
