@@ -100,16 +100,16 @@ Initial components decided for Project.
 
 | Task                                     | Priority | Estimated Time | Time Invested |
 | ---------------------------------------- | :------: | :------------: | :-----------: |
-| Create database/seed data                |    H     |     5 hrs      |      hrs      |
-| Find images for each poem...             |    H     |     4 hrs      |      hrs      |
-| Create routes/test                       |    H     |     2 hrs      |      hrs      |
-| Create React Skeleton React Components   |    M     |     4 hrs      |      hrs      |
-| React Routes/Paths linking to components |    H     |      2 hr      |      hr       |
-| API fetch to grab data in React          |    L     |     0.5 hr     |      hrs      |
-| Mobile Layouts                           |    H     |     6 hrs      |      hrs      |
-| Tablet Layouts                           |    H     |     6 hrs      |      hrs      |
-| Desktop Layouts                          |    H     |     8 hrs      |      hrs      |
-| Total Time                               |    H     |    37.5 hrs    |      hrs      |
+| Create database/seed data                |    H     |     5 hrs      |    10 hrs     |
+| Find images for each poem...             |    H     |     4 hrs      |     1 hrs     |
+| Create routes/test                       |    H     |     2 hrs      |    1.5 hrs    |
+| Create React Skeleton React Components   |    M     |     4 hrs      |     3 hrs     |
+| React Routes/Paths linking to components |    H     |      2 hr      |    0.5 hr     |
+| API fetch to grab data in React          |    L     |     0.5 hr     |    0.5 hrs    |
+| Mobile Layouts                           |    H     |     6 hrs      |     8 hrs     |
+| Tablet Layouts                           |    H     |     6 hrs      |     6 hrs     |
+| Desktop Layouts                          |    H     |     8 hrs      |     5 hrs     |
+| Total Time                               |    H     |    37.5 hrs    |   35.5 hrs    |
 
 ## Post MVP Time-Frames
 
