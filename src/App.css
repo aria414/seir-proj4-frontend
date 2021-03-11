@@ -482,10 +482,11 @@ form textarea {
   }
 
   .nav {
-    display: block;
-    height: 800px;
+    /* display: block; */
+    /* height: 800px; */
     position: fixed;
-    top: 80px;
+    top: 0px;
+    height: 100vh;
   }
 
   i.las,
@@ -496,8 +497,8 @@ form textarea {
   .logo-area {
     width: 100%;
     padding: 5%;
-    height: 20%;
-    margin-top: 5%;
+    height: 15%;
+    margin-top: 0%;
   }
   .logo-area h3 {
     text-align: center;
