@@ -482,11 +482,10 @@ form textarea {
   }
 
   .nav {
-    /* display: block; */
-    /* height: 800px; */
     position: fixed;
     top: 0px;
     height: 100vh;
+    max-height: 850px;
   }
 
   i.las,
