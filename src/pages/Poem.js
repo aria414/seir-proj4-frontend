@@ -65,7 +65,12 @@ const Poem = (props) => {
   };
 
   const loading = () => {
-    return <h2>Poem loading...</h2>;
+    return (
+      <section class="loading light-gray-text">
+        <h2>Loading Poems...</h2>
+        <p>Please be paitient... Loading from Heroku might take some time.</p>
+      </section>
+    );
   };
 
   return currentPoem ? loaded() : loading();
