@@ -92,13 +92,25 @@ const SideNav = () => {
 
       <div className="collapse" id="navbarToggleExternalContent">
         <div className="p-4">
-          <NavLink to="/home" aria-label="Link to Home Page">
+          <NavLink
+            to="/home"
+            activeClassName="active"
+            aria-label="Link to Home Page"
+          >
             <h2>Home</h2>
           </NavLink>
-          <NavLink to="/about" aria-label="Link to About Page">
+          <NavLink
+            to="/about"
+            activeClassName="active"
+            aria-label="Link to About Page"
+          >
             <h2>About</h2>
           </NavLink>
-          <NavLink to="/contact" aria-label="Link to Contact Page">
+          <NavLink
+            to="/contact"
+            activeClassName="active"
+            aria-label="Link to Contact Page"
+          >
             <h2>Contact</h2>
           </NavLink>
         </div>

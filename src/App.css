@@ -29,6 +29,10 @@ a {
   color: #e3cccc;
 }
 
+.p-4 h2:hover {
+  color: #fff;
+}
+
 h1 {
   font-size: 2em;
   font-family: "EB Garamond", serif;
@@ -101,6 +105,15 @@ header {
 .page-icon-group h2 {
   display: none;
   color: white;
+}
+
+.active {
+  background: #510000;
+}
+
+.book-icon-group a,
+.page-icon-group a {
+  padding: 2% 5%;
 }
 
 i.las,
@@ -394,9 +407,6 @@ form textarea {
     width: 75px;
     font-size: 1.3em;
     align-items: center;
-  }
-  .active {
-    background: #510000;
   }
 
   a:hover {
